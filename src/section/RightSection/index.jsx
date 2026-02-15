@@ -2,12 +2,16 @@ import { faGit, faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import picExp from '../../assets/Expic1.png'
 import { useState } from "react";
+import About from "../About"
 const Experience = () => {
     const [isMouseEnter, setIsMouseEnter] = useState(false);
 
     return (
         <div className="">
-            <div className="text-primaryAccent font-medium">Experience</div>
+             <About /> 
+              <div className="text-primaryAccent font-medium mb-4">Experience
+    </div>
+
             <div className={`grid grid-cols-[25%_75%]  rounded px-2 py-6 ${isMouseEnter ? "bg-gray-200" : ""}`}
                 onMouseEnter={() => setIsMouseEnter(true)}
                 onMouseLeave={() => setIsMouseEnter(false)}
